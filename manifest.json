@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome搶票腳本",
+  "version": "1.0",
+  "description": "chrome 大小霸",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://npm.cpami.gov.tw/apply_1_3.aspx"
+      ],
+      "js": [
+        "scripts_mountain.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://tixcraft.com/activity/game/*"
+      ],
+      "js": [
+        "purchase_button_click.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://tixcraft.com/ticket/area/*/*"
+      ],
+      "js": [
+        "area_select_script.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://tixcraft.com/ticket/verify/*/*"
+      ],
+      "js": [
+        "input_verify.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://tixcraft.com/ticket/ticket/*/*/*/*"
+      ],
+      "js": [
+        "purchase_info_input.js"
+      ]
+    }
+  ]
+}
